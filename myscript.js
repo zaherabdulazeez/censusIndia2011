@@ -5,8 +5,8 @@ var numfield = fieldArray.length;
 var numdist = distArray.length;
 var numstate = stateArray.length;
 var truenames = ["State","District","Level","Name","TRU","Area","No.of.Households","Total.Population.Person","Total.Population.Male","Total.Population.Female","Population.in.the.age.group.0.6.Person","Population.in.the.age.group.0.6.Male","Population.in.the.age.group.0.6.Female","Scheduled.Castes.population.Person","Scheduled.Castes.population.Male","Scheduled.Castes.populationFemale","Scheduled.Tribes.population.Person","Scheduled.Tribes.population.Male","Scheduled.Tribes.population.Female","Literates.Population.Person","Literates.Population.Male","Literates.Population.Female","Illiterate.Persons","Illiterate.Male","Illiterate.Female","Total.Worker.Population.Person","Total.Worker.Population.Male","Total.Worker.Population.Female","Main.Working.Population.Person","Main.Working.Population.Male","Main.Working.Population.Female","Main.Cultivator.Population.Person","Main.Cultivator.Population.Male","Main.Cultivator.Population.Female","Main.Agricultural.Labourers.Population.Person","Main.Agricultural.Labourers.Population.Male","Main.Agricultural.Labourers.Population.Female","Main.Household.Industries.Population.Person","Main.Household.Industries.Population.Male","Main.Household.Industries.Population.Female","Main.Other.Workers.Population.Person","Main.Other.Workers.Population.Male","Main.Other.Workers.Population.Female","Marginal.Worker.Population.Person","Marginal.Worker.Population.Male","Marginal.Worker.Population.Female","Marginal.Cultivator.Population.Person","Marginal.Cultivator.Population.Male","Marginal.Cultivator.Population.Female","Marginal.Agriculture.Labourers.Population.Person","Marginal.Agriculture.Labourers.Population.Male","Marginal.Agriculture.Labourers.Population.Female","Marginal.Household.Industries.Population.Person","Marginal.Household.Industries.Population.Male","Marginal.Household.Industries.Population.Female","Marginal.Other.Workers.Population.Person","Marginal.Other.Workers.Population.Male","Marginal.Other.Workers.Population.Female","Non.Working.Population.Person","Non.Working.Population.Male","Non.Working.Population.Female"]
-console.log(numdist);
-console.log(numfield);
+// console.log(numdist);
+// console.log(numfield);
 
 var distonlyJSON =[
   {
@@ -40396,30 +40396,29 @@ var maxJSON = [
   }
 ];
 
-//var distData = distonlyJSON;
+var distData = distonlyJSON;
 // $.getJSON("dist_reduced.JSON");
-var distData;
-function loadJSON(callback) {   
+// function loadJSON(callback) {   
 
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'dist_reduced.JSON', true); 
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
- }
- function init() {
- loadJSON(function(response) {
-  // Parse JSON string into object
-    distData = JSON.parse(response);
- });
-}
+//     var xobj = new XMLHttpRequest();
+//         xobj.overrideMimeType("application/json");
+//     xobj.open('GET', 'dist_reduced.JSON', true); 
+//     xobj.onreadystatechange = function () {
+//           if (xobj.readyState == 4 && xobj.status == "200") {
+//             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+//             callback(xobj.responseText);
+//           }
+//     };
+//     xobj.send(null);  
+//  }
+//  function init() {
+//  loadJSON(function(response) {
+//   // Parse JSON string into object
+//     distData = JSON.parse(response);
+//  });
+// }
 
-console.log(distData);
+// console.log(distData);
 
 //var maxData = maxJSON;
 
@@ -40508,7 +40507,7 @@ var legendWrite = function(col){
     document.getElementById("legend").innerHTML=name ;  
 }
 var trigger = function(col){
-    init();
+    //init();
     f =  pointer(col);
     legendWrite(col);
     arr = generate(f);
