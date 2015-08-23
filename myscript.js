@@ -40521,7 +40521,7 @@ var trigger = function(col){
 };
 var stor = [ '<div class="alert alert-info">',
 '       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>',
-'       <strong>Info:</strong> Feature is down for development. Please check back after 20th August.',
+'       <strong>Info:</strong> Feature is down for development. Please check back after August',
 '   </div>'
 ].join('');
 
