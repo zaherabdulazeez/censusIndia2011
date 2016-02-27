@@ -1,13 +1,25 @@
+/*This was written at a time 
+**when I knew nothing about the art of programming
+**and clean coding. So all you may find here is a bunch of hacks
+**I have no time to re-write this code as of now .
+**But I would definitely have this in my priority on my next vacation
+*/
+
+//district codes in census data -  symmbol ' in the data set isreplaced by letter z 
 var distArray =["z001","z002","z003","z004","z005","z006","z007","z008","z009","z010","z011","z012","z013","z014","z015","z016","z017","z018","z019","z020","z021","z022","z023","z024","z025","z026","z027","z028","z029","z030","z031","z032","z033","z034","z035","z036","z037","z038","z039","z040","z041","z042","z043","z044","z045","z046","z047","z048","z049","z050","z051","z052","z053","z054","z055","z056","z057","z058","z059","z060","z061","z062","z063","z064","z065","z066","z067","z068","z069","z070","z071","z072","z073","z074","z075","z076","z077","z078","z079","z080","z081","z082","z083","z084","z085","z086","z087","z088","z089","z090","z091","z092","z093","z094","z095","z096","z097","z098","z099","z100","z101","z102","z103","z104","z105","z106","z107","z108","z109","z110","z111","z112","z113","z114","z115","z116","z117","z118","z119","z120","z121","z122","z123","z124","z125","z126","z127","z128","z129","z130","z131","z132","z133","z134","z135","z136","z137","z138","z139","z140","z141","z142","z143","z144","z145","z146","z147","z148","z149","z150","z151","z152","z153","z154","z155","z156","z157","z158","z159","z160","z161","z162","z163","z164","z165","z166","z167","z168","z169","z170","z171","z172","z173","z174","z175","z176","z177","z178","z179","z180","z181","z182","z183","z184","z185","z186","z187","z188","z189","z190","z191","z192","z193","z194","z195","z196","z197","z198","z199","z200","z201","z202","z203","z204","z205","z206","z207","z208","z209","z210","z211","z212","z213","z214","z215","z216","z217","z218","z219","z220","z221","z222","z223","z224","z225","z226","z227","z228","z229","z230","z231","z232","z233","z234","z235","z236","z237","z238","z239","z240","z241","z242","z243","z244","z245","z246","z247","z248","z249","z250","z251","z252","z253","z254","z255","z256","z257","z258","z259","z260","z261","z262","z263","z264","z265","z266","z267","z268","z269","z270","z271","z272","z273","z274","z275","z276","z277","z278","z279","z280","z281","z282","z283","z284","z285","z286","z287","z288","z289","z290","z291","z292","z293","z294","z295","z296","z297","z298","z299","z300","z301","z302","z303","z304","z305","z306","z307","z308","z309","z310","z311","z312","z313","z314","z315","z316","z317","z318","z319","z320","z321","z322","z323","z324","z325","z326","z327","z328","z329","z330","z331","z332","z333","z334","z335","z336","z337","z338","z339","z340","z341","z342","z343","z344","z345","z346","z347","z348","z349","z350","z351","z352","z353","z354","z355","z356","z357","z358","z359","z360","z361","z362","z363","z364","z365","z366","z367","z368","z369","z370","z371","z372","z373","z374","z375","z376","z377","z378","z379","z380","z381","z382","z383","z384","z385","z386","z387","z388","z389","z390","z391","z392","z393","z394","z395","z396","z397","z398","z399","z400","z401","z402","z403","z404","z405","z406","z407","z408","z409","z410","z411","z412","z413","z414","z415","z416","z417","z418","z419","z420","z421","z422","z423","z424","z425","z426","z427","z428","z429","z430","z431","z432","z433","z434","z435","z436","z437","z438","z439","z440","z441","z442","z443","z444","z445","z446","z447","z448","z449","z450","z451","z452","z453","z454","z455","z456","z457","z458","z459","z460","z461","z462","z463","z464","z465","z466","z467","z468","z469","z470","z471","z472","z473","z474","z475","z476","z477","z478","z479","z480","z481","z482","z483","z484","z485","z486","z487","z488","z489","z490","z491","z492","z493","z494","z495","z496","z497","z498","z499","z500","z501","z502","z503","z504","z505","z506","z507","z508","z509","z510","z511","z512","z513","z514","z515","z516","z517","z518","z519","z520","z521","z522","z523","z524","z525","z526","z527","z528","z529","z530","z531","z532","z533","z534","z535","z536","z537","z538","z539","z540","z541","z542","z543","z544","z545","z546","z547","z548","z549","z550","z551","z552","z553","z554","z555","z556","z557","z558","z559","z560","z561","z562","z563","z564","z565","z566","z567","z568","z569","z570","z571","z572","z573","z574","z575","z576","z577","z578","z579","z580","z581","z582","z583","z584","z585","z586","z587","z588","z589","z590","z591","z592","z593","z594","z595","z596","z597","z598","z599","z600","z601","z602","z603","z604","z605","z606","z607","z608","z609","z610","z611","z612","z613","z614","z615","z616","z617","z618","z619","z620","z621","z622","z623","z624","z625","z626","z627","z628","z629","z630","z631","z632","z633","z634","z635","z636","z637","z638","z639","z640"];
+//state codes
 var stateArray=["z01","z02","z03","z04","z05","z06","z07","z08","z09","z10","z11","z12","z13","z14","z15","z16","z17","z18","z19","z20","z21","z22","z23","z24","z25","z26","z27","z28","z29","z30","z31","z32","z33","z34","z35"];
+//data fields
 var fieldArray= ["State","District","Level","Name","TRU","Area","NOH","TP","TPM","TPF","PA06","PAO6M","PA06F","SCP","SCM","SCF","STP","STM","STF","LP","LPM","LPF","ILP","ILM","ILF","TWP","TWPM","TWPF","MWP","MWPM","MWPF","MCP","MCPM","MCPF","MALP","MALPM","MALPF","MHIP","MHIPM","MHIPF","MOWP","MOWPM","MOWPF","mWP","mWPM","mWPF","mCP","mCPM","mCPF","mALP","mALPM","mALPF","mHIP","mHIPM","mHIPF","mOWP","mOWPM","mOWPF","NWP","NWPM","NWPF"];
 var numfield = fieldArray.length;
 var numdist = distArray.length;
 var numstate = stateArray.length;
 var truenames = ["State","District","Level","Name","TRU","Area","No of Households","Total Population Person","Total Population Male","Total Population Female","Population in the age group 0-6 Person","Population in the age group 0-6 Male","Population in the age group 0-6 Female","Scheduled Castes population Persons","Scheduled Castes population Male","Scheduled Castes population Female","Scheduled Tribes population Person","Scheduled Tribes population Male","Scheduled Tribes population Female","Literates Population Person","Literates Population Male","Literates Population Female","Illiterate Persons","Illiterate Male","Illiterate Female","Total Worker Population Person","Total Worker Population Male","Total Worker Population Female","Main Working Population Person","Main Working Population Male","Main Working Population Female","Main Cultivator Population Person","Main Cultivator Population Male","Main Cultivator Population Female","Main Agricultural Labourers Population Person","Main Agricultural Labourers Population Male","Main Agricultural Labourers Population Female","Main Household Industries Population Person","Main Household Industries Population Male","Main Household Industries Population Female","Main Other Workers Population Person","Main Other Workers Population Male","Main Other Workers Population Female","Marginal Worker Population Person","Marginal Worker Population Male","Marginal Worker Population Female","Marginal Cultivator Population Person","Marginal Cultivator Population Male","Marginal Cultivator Population Female","Marginal Agriculture Labourers Population Person","Marginal Agriculture Labourers Population Male","Marginal Agriculture Labourers Population Female","Marginal Household Industries Population Person","Marginal Household Industries Population Male","Marginal Household Industries Population Female","Marginal Other Workers Population Person","Marginal Other Workers Population Male","Marginal Other Workers Population Female","Non Working Population Person","Non Working Population Male","Non Working Population Female"]
-// console.log(numdist);
-// console.log(numfield);
 
+
+// for deploying a static website - data is put up as json . thanks to R statistical package
+
+//district level data
 var distonlyJSON =[
   {
     "State": "z01",
@@ -40330,6 +40342,7 @@ var distonlyJSON =[
     "NWPF": 91591
   }
 ];
+//state level data
 var maxJSON = [
   {
     "State": "'00",
@@ -40397,6 +40410,7 @@ var maxJSON = [
 ];
 
 var distData = distonlyJSON;
+
 // $.getJSON("dist_reduced.JSON");
 // function loadJSON(callback) {   
 
@@ -40418,8 +40432,6 @@ var distData = distonlyJSON;
 //  });
 // }
 
-// console.log(distData);
-
 //var maxData = maxJSON;
 
 var pointer = function(col){
@@ -40440,20 +40452,6 @@ var generate = function(f){
 
 };
 
-// var normer = function(arr,f,max){
-// 	// get the value at col from maxData
-// 	// divide each element of arr by the max value
-// 	// return k
-// 	// var maxim = maxData[0][f];
-// 	var k = [];
-// 	for (var i = 0; i < numdist; i++){ 
-// 		k[i] = arr[i]/max;
-// 	};
-// 	console.log(k);
-// 	return k;
-
-// };
-
 var painter = function(arr,f,min,max){
 	// for each elemnt in distArray get the elemnt by id and change it fill style rgb(k*255, (1-k)*255,0)
 	var idl;
@@ -40467,10 +40465,7 @@ var painter = function(arr,f,min,max){
 			var colour = d3.scale.linear()
 	                .domain([min,max])
 	                .range(colours);
-	        // console.log(min);
-	        // console.log(max);
-
-
+	        
 			idl = distData[i].District;
 			sel = d3.select('body').select('svg');
 			se = sel.select("path"+"#"+idl);
@@ -40478,28 +40473,10 @@ var painter = function(arr,f,min,max){
 			b = distData[i][f];
 			var c = " : "+ String(b);
 			disp = a.concat(c);
-			// var n = k[i]*255;
-			// var m = (1-k[i])*255;
-			// var colr = "rgb(" + n +","+ m +", 0)";
-			// console.log(colour(arr[i]));
-
+			
 			se.attr("fill",colour(arr[i]));
 			se.attr('title',disp); 
-
-            
-
-			// sel = document.getElementById("mapsvg");		
-   //          var svgDoc = sel.contentDocument; //get the inner DOM of svg
-   //          var se = svgDoc.getElementById(idl); //get the inner element by id
-   //          se.setAttribute("style","fill:rgb(k[i]*255, (1-k[i])*255, 0)");
-
-			// a = distData[i].Name;
-			// b = distData[i][f];
-			// var c=String(b);
-			// disp = a.concat(c);
-			// se.title = disp ;  
-        		
-	};
+    };
 
 };
 var legendWrite = function(col){
@@ -40514,7 +40491,6 @@ var trigger = function(col){
     var min = Math.min.apply(null, arr);
     var max = Math.max.apply(null, arr);
 
-	// k = normer(arr,f,max);
 	painter(arr,f,min,max);
 
 	
@@ -40526,148 +40502,148 @@ var stor = [ '<div class="alert alert-info">',
 ].join('');
 
 
-// i owe so much to -> http://htmltojavascript.com/ for creating this storemore variable
-// var stor = [
-// '<div class="alert alert-info">',
-// '       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>',
-// '       <div class="form-horizontal" role="form">',
-// '           <div class="form-group">',
-// '               <div class="col-md-4">',
-// '                   <select class="form-control" id="sel1">',
-// '                       <option value="" selected disabled>-- Please Select Data --</option>',
-// '                       <option value=5>Area</option>',
-// '                       <option value=6>No of Households</option>',
-// '                       <option value=7>Total Population Persons</option>',
-// '                       <option value=8>Total Population Male</option>',
-// '                       <option value=9>Total Population Female</option>',
-// '                       <option value=10>Population in the age group 0-6 Persons</option>',
-// '                       <option value=11>Population in the age group 0-6 Male</option>',
-// '                       <option value=12>Population in the age group 0-6 Female</option>',
-// '                       <option value=13>Scheduled Castes population Persons</option>',
-// '                       <option value=14>Scheduled Castes population Male</option>',
-// '                       <option value=15>Scheduled Castes populationFemale</option>',
-// '                       <option value=16>Scheduled Tribes population Persons</option>',
-// '                       <option value=17>Scheduled Tribes population Male</option>',
-// '                       <option value=18>Scheduled Tribes population Female</option>',
-// '                       <option value=19>Literates Population Persons</option>',
-// '                       <option value=20>Literates Population Male</option>',
-// '                       <option value=21>Literates Population Female</option>',
-// '                       <option value=22>Illiterate Personss</option>',
-// '                       <option value=23>Illiterate Male</option>',
-// '                       <option value=24>Illiterate Female</option>',
-// '                       <option value=25>Total Worker Population Persons</option>',
-// '                       <option value=26>Total Worker Population Male</option>',
-// '                       <option value=27>Total Worker Population Female</option>',
-// '                       <option value=28>Main Working Population Persons</option>',
-// '                       <option value=29>Main Working Population Male</option>',
-// '                       <option value=30>Main Working Population Female</option>',
-// '                       <option value=31>Main Cultivator Population Persons</option>',
-// '                       <option value=32>Main Cultivator Population Male</option>',
-// '                       <option value=33>Main Cultivator Population Female</option>',
-// '                       <option value=34>Main Agricultural Labourers Population Persons</option>',
-// '                       <option value=35>Main Agricultural Labourers Population Male</option>',
-// '                       <option value=36>Main Agricultural Labourers Population Female</option>',
-// '                       <option value=37>Main Household Industries Population Persons</option>',
-// '                       <option value=38>Main Household Industries Population Male</option>',
-// '                       <option value=39>Main Household Industries Population Female</option>',
-// '                       <option value=40>Main Other Workers Population Persons</option>',
-// '                       <option value=41>Main Other Workers Population Male</option>',
-// '                       <option value=42>Main Other Workers Population Female</option>',
-// '                       <option value=43>Marginal Worker Population Persons</option>',
-// '                       <option value=44>Marginal Worker Population Male</option>',
-// '                       <option value=45>Marginal Worker Population Female</option>',
-// '                       <option value=46>Marginal Cultivator Population Persons</option>',
-// '                       <option value=47>Marginal Cultivator Population Male</option>',
-// '                       <option value=48>Marginal Cultivator Population Female</option>',
-// '                       <option value=49>Marginal Agriculture Labourers Population Persons</option>',
-// '                       <option value=50>Marginal Agriculture Labourers Population Male</option>',
-// '                       <option value=51>Marginal Agriculture Labourers Population Female</option>',
-// '                       <option value=52>Marginal Household Industries Population Persons</option>',
-// '                       <option value=53>Marginal Household Industries Population Male</option>',
-// '                       <option value=54>Marginal Household Industries Population Female</option>',
-// '                       <option value=55>Marginal Other Workers Population Persons</option>',
-// '                       <option value=56>Marginal Other Workers Population Male</option>',
-// '                       <option value=57>Marginal Other Workers Population Female</option>',
-// '                       <option value=58>Non Working Population Persons</option>',
-// '                       <option value=59>Non Working Population Male</option>',
-// '                       <option value=60>Non Working Population Female</option>',
-// '                   </select>',
-// '               </div>  ',
-// '               <div class="col-md-1">',
-// '                   <select class="form-control" id="sel1">',
-// '                       <option>/</option>',
-// '                       <option>*</option>',
-// '                       <option>+</option>',
-// '                       <option>-</option>',
-// '                   </select>',
-// '               </div>  ',
-// '               <div class="col-md-4">',
-// '                   <select class="form-control" id="sel2">',
-// '                           <option value="" selected disabled>-- Please Select Data --</option>',
-// '                       <option value=5>Area</option>',
-// '                       <option value=6>No of Households</option>',
-// '                       <option value=7>Total Population Persons</option>',
-// '                       <option value=8>Total Population Male</option>',
-// '                       <option value=9>Total Population Female</option>',
-// '                       <option value=10>Population in the age group 0-6 Persons</option>',
-// '                       <option value=11>Population in the age group 0-6 Male</option>',
-// '                       <option value=12>Population in the age group 0-6 Female</option>',
-// '                       <option value=13>Scheduled Castes population Persons</option>',
-// '                       <option value=14>Scheduled Castes population Male</option>',
-// '                       <option value=15>Scheduled Castes populationFemale</option>',
-// '                       <option value=16>Scheduled Tribes population Persons</option>',
-// '                       <option value=17>Scheduled Tribes population Male</option>',
-// '                       <option value=18>Scheduled Tribes population Female</option>',
-// '                       <option value=19>Literates Population Persons</option>',
-// '                       <option value=20>Literates Population Male</option>',
-// '                       <option value=21>Literates Population Female</option>',
-// '                       <option value=22>Illiterate Persons</option>',
-// '                       <option value=23>Illiterate Male</option>',
-// '                       <option value=24>Illiterate Female</option>',
-// '                       <option value=25>Total Worker Population Persons</option>',
-// '                       <option value=26>Total Worker Population Male</option>',
-// '                       <option value=27>Total Worker Population Female</option>',
-// '                       <option value=28>Main Working Population Persons</option>',
-// '                       <option value=29>Main Working Population Male</option>',
-// '                       <option value=30>Main Working Population Female</option>',
-// '                       <option value=31>Main Cultivator Population Persons</option>',
-// '                       <option value=32>Main Cultivator Population Male</option>',
-// '                       <option value=33>Main Cultivator Population Female</option>',
-// '                       <option value=34>Main Agricultural Labourers Population Persons</option>',
-// '                       <option value=35>Main Agricultural Labourers Population Male</option>',
-// '                       <option value=36>Main Agricultural Labourers Population Female</option>',
-// '                       <option value=37>Main Household Industries Population Persons</option>',
-// '                       <option value=38>Main Household Industries Population Male</option>',
-// '                       <option value=39>Main Household Industries Population Female</option>',
-// '                       <option value=40>Main Other Workers Population Persons</option>',
-// '                       <option value=41>Main Other Workers Population Male</option>',
-// '                       <option value=42>Main Other Workers Population Female</option>',
-// '                       <option value=43>Marginal Worker Population Persons</option>',
-// '                       <option value=44>Marginal Worker Population Male</option>',
-// '                       <option value=45>Marginal Worker Population Female</option>',
-// '                       <option value=46>Marginal Cultivator Population Persons</option>',
-// '                       <option value=47>Marginal Cultivator Population Male</option>',
-// '                       <option value=48>Marginal Cultivator Population Female</option>',
-// '                       <option value=49>Marginal Agriculture Labourers Population Persons</option>',
-// '                       <option value=50>Marginal Agriculture Labourers Population Male</option>',
-// '                       <option value=51>Marginal Agriculture Labourers Population Female</option>',
-// '                       <option value=52>Marginal Household Industries Population Persons</option>',
-// '                       <option value=53>Marginal Household Industries Population Male</option>',
-// '                       <option value=54>Marginal Household Industries Population Female</option>',
-// '                       <option value=55>Marginal Other Workers Population Persons</option>',
-// '                       <option value=56>Marginal Other Workers Population Male</option>',
-// '                       <option value=57>Marginal Other Workers Population Female</option>',
-// '                       <option value=58>Non Working Population Persons</option>',
-// '                       <option value=59>Non Working Population Male</option>',
-// '                       <option value=60>Non Working Population Female</option>',
-// '                   </select>',
-// '               </div>',
-// '             <button type="submit" class="btn btn-default">Visualize</button>',
-// '             <button type="submit" class="btn btn-default" onclick="morefun()">Store Value</button>',
-// '           </div>',
-// '           </div>',
-// '   </div>'
-// ].join('');
+// i owe to http://htmltojavascript.com/ for creating this 
+var stor = [
+'<div class="alert alert-info">',
+'       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>',
+'       <div class="form-horizontal" role="form">',
+'           <div class="form-group">',
+'               <div class="col-md-4">',
+'                   <select class="form-control" id="sel1">',
+'                       <option value="" selected disabled>-- Please Select Data --</option>',
+'                       <option value=5>Area</option>',
+'                       <option value=6>No of Households</option>',
+'                       <option value=7>Total Population Persons</option>',
+'                       <option value=8>Total Population Male</option>',
+'                       <option value=9>Total Population Female</option>',
+'                       <option value=10>Population in the age group 0-6 Persons</option>',
+'                       <option value=11>Population in the age group 0-6 Male</option>',
+'                       <option value=12>Population in the age group 0-6 Female</option>',
+'                       <option value=13>Scheduled Castes population Persons</option>',
+'                       <option value=14>Scheduled Castes population Male</option>',
+'                       <option value=15>Scheduled Castes populationFemale</option>',
+'                       <option value=16>Scheduled Tribes population Persons</option>',
+'                       <option value=17>Scheduled Tribes population Male</option>',
+'                       <option value=18>Scheduled Tribes population Female</option>',
+'                       <option value=19>Literates Population Persons</option>',
+'                       <option value=20>Literates Population Male</option>',
+'                       <option value=21>Literates Population Female</option>',
+'                       <option value=22>Illiterate Personss</option>',
+'                       <option value=23>Illiterate Male</option>',
+'                       <option value=24>Illiterate Female</option>',
+'                       <option value=25>Total Worker Population Persons</option>',
+'                       <option value=26>Total Worker Population Male</option>',
+'                       <option value=27>Total Worker Population Female</option>',
+'                       <option value=28>Main Working Population Persons</option>',
+'                       <option value=29>Main Working Population Male</option>',
+'                       <option value=30>Main Working Population Female</option>',
+'                       <option value=31>Main Cultivator Population Persons</option>',
+'                       <option value=32>Main Cultivator Population Male</option>',
+'                       <option value=33>Main Cultivator Population Female</option>',
+'                       <option value=34>Main Agricultural Labourers Population Persons</option>',
+'                       <option value=35>Main Agricultural Labourers Population Male</option>',
+'                       <option value=36>Main Agricultural Labourers Population Female</option>',
+'                       <option value=37>Main Household Industries Population Persons</option>',
+'                       <option value=38>Main Household Industries Population Male</option>',
+'                       <option value=39>Main Household Industries Population Female</option>',
+'                       <option value=40>Main Other Workers Population Persons</option>',
+'                       <option value=41>Main Other Workers Population Male</option>',
+'                       <option value=42>Main Other Workers Population Female</option>',
+'                       <option value=43>Marginal Worker Population Persons</option>',
+'                       <option value=44>Marginal Worker Population Male</option>',
+'                       <option value=45>Marginal Worker Population Female</option>',
+'                       <option value=46>Marginal Cultivator Population Persons</option>',
+'                       <option value=47>Marginal Cultivator Population Male</option>',
+'                       <option value=48>Marginal Cultivator Population Female</option>',
+'                       <option value=49>Marginal Agriculture Labourers Population Persons</option>',
+'                       <option value=50>Marginal Agriculture Labourers Population Male</option>',
+'                       <option value=51>Marginal Agriculture Labourers Population Female</option>',
+'                       <option value=52>Marginal Household Industries Population Persons</option>',
+'                       <option value=53>Marginal Household Industries Population Male</option>',
+'                       <option value=54>Marginal Household Industries Population Female</option>',
+'                       <option value=55>Marginal Other Workers Population Persons</option>',
+'                       <option value=56>Marginal Other Workers Population Male</option>',
+'                       <option value=57>Marginal Other Workers Population Female</option>',
+'                       <option value=58>Non Working Population Persons</option>',
+'                       <option value=59>Non Working Population Male</option>',
+'                       <option value=60>Non Working Population Female</option>',
+'                   </select>',
+'               </div>  ',
+'               <div class="col-md-1">',
+'                   <select class="form-control" id="sel-operator">',
+'                       <option>/</option>',
+'                       <option>*</option>',
+'                       <option>+</option>',
+'                       <option>-</option>',
+'                   </select>',
+'               </div>  ',
+'               <div class="col-md-4">',
+'                   <select class="form-control" id="sel2">',
+'                           <option value="" selected disabled>-- Please Select Data --</option>',
+'                       <option value=5>Area</option>',
+'                       <option value=6>No of Households</option>',
+'                       <option value=7>Total Population Persons</option>',
+'                       <option value=8>Total Population Male</option>',
+'                       <option value=9>Total Population Female</option>',
+'                       <option value=10>Population in the age group 0-6 Persons</option>',
+'                       <option value=11>Population in the age group 0-6 Male</option>',
+'                       <option value=12>Population in the age group 0-6 Female</option>',
+'                       <option value=13>Scheduled Castes population Persons</option>',
+'                       <option value=14>Scheduled Castes population Male</option>',
+'                       <option value=15>Scheduled Castes populationFemale</option>',
+'                       <option value=16>Scheduled Tribes population Persons</option>',
+'                       <option value=17>Scheduled Tribes population Male</option>',
+'                       <option value=18>Scheduled Tribes population Female</option>',
+'                       <option value=19>Literates Population Persons</option>',
+'                       <option value=20>Literates Population Male</option>',
+'                       <option value=21>Literates Population Female</option>',
+'                       <option value=22>Illiterate Persons</option>',
+'                       <option value=23>Illiterate Male</option>',
+'                       <option value=24>Illiterate Female</option>',
+'                       <option value=25>Total Worker Population Persons</option>',
+'                       <option value=26>Total Worker Population Male</option>',
+'                       <option value=27>Total Worker Population Female</option>',
+'                       <option value=28>Main Working Population Persons</option>',
+'                       <option value=29>Main Working Population Male</option>',
+'                       <option value=30>Main Working Population Female</option>',
+'                       <option value=31>Main Cultivator Population Persons</option>',
+'                       <option value=32>Main Cultivator Population Male</option>',
+'                       <option value=33>Main Cultivator Population Female</option>',
+'                       <option value=34>Main Agricultural Labourers Population Persons</option>',
+'                       <option value=35>Main Agricultural Labourers Population Male</option>',
+'                       <option value=36>Main Agricultural Labourers Population Female</option>',
+'                       <option value=37>Main Household Industries Population Persons</option>',
+'                       <option value=38>Main Household Industries Population Male</option>',
+'                       <option value=39>Main Household Industries Population Female</option>',
+'                       <option value=40>Main Other Workers Population Persons</option>',
+'                       <option value=41>Main Other Workers Population Male</option>',
+'                       <option value=42>Main Other Workers Population Female</option>',
+'                       <option value=43>Marginal Worker Population Persons</option>',
+'                       <option value=44>Marginal Worker Population Male</option>',
+'                       <option value=45>Marginal Worker Population Female</option>',
+'                       <option value=46>Marginal Cultivator Population Persons</option>',
+'                       <option value=47>Marginal Cultivator Population Male</option>',
+'                       <option value=48>Marginal Cultivator Population Female</option>',
+'                       <option value=49>Marginal Agriculture Labourers Population Persons</option>',
+'                       <option value=50>Marginal Agriculture Labourers Population Male</option>',
+'                       <option value=51>Marginal Agriculture Labourers Population Female</option>',
+'                       <option value=52>Marginal Household Industries Population Persons</option>',
+'                       <option value=53>Marginal Household Industries Population Male</option>',
+'                       <option value=54>Marginal Household Industries Population Female</option>',
+'                       <option value=55>Marginal Other Workers Population Persons</option>',
+'                       <option value=56>Marginal Other Workers Population Male</option>',
+'                       <option value=57>Marginal Other Workers Population Female</option>',
+'                       <option value=58>Non Working Population Persons</option>',
+'                       <option value=59>Non Working Population Male</option>',
+'                       <option value=60>Non Working Population Female</option>',
+'                   </select>',
+'               </div>',
+'             <button type="submit" class="btn btn-default">Visualize</button>',
+'             <button type="submit" class="btn btn-default" onclick="morefun()">Store Value</button>',
+'           </div>',
+'           </div>',
+'   </div>'
+].join('');
 
 var morefun =function(){
     document.getElementById("ration").innerHTML+= stor;
